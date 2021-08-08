@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+</head>
+<body>
+    <h2>Mahindra</h2>
+    <script>
+        class company
+        {
+            constructor(modelname,engine,type) 
+            {
+              this.modelname=modelname;
+              this.engine=engine;
+              this.type=type;
+            }
+
+               getcompany()
+               {
+                return this.modelname;
+               }
+        }
+
+        class car extends company
+        {
+             constructor(modelname,engine,type,launch,gear)
+             {
+                super(modelname,engine,type);
+                this.launch=launch;
+                this.gear=gear;
+               
+
+             }
+                getcar()
+                {
+                return this.modelname;
+                }
+   
+    
+        }
+ let car1=new car('XUV300','bs6 - 1497cc',' Compact Suv',2020,'6 speed Manual/Automatic');
+ console.log(car1)
+    </script>
+</body>
+</html>
